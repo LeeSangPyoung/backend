@@ -265,3 +265,8 @@ helm install my-kafka bitnami/kafka
 ```
 
 ## 김흥기 수정중
+
+http :8081/classes title="MSA" minEnrollment=1 maxEnrollment=10 status="OPENED" categoryId[id]="1"
+http :8082/enrollments customerId="myinno" classId[id]="1" status="ENROLLED"
+
+http :8083/categories title="MSA_catalog"
