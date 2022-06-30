@@ -270,3 +270,6 @@ http :8081/classes title="MSA" minEnrollment=1 maxEnrollment=10 status="OPENED" 
 http :8082/enrollments customerId="myinno" classId[id]="1" status="ENROLLED"
 
 http :8083/categories title="MSA_catalog"
+
+
+## Local에서 수행해 보자
