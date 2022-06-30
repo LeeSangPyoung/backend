@@ -1,17 +1,17 @@
 package classmgt.infra;
 
-import classmgt.domain.*;
 import org.springframework.hateoas.EntityModel;
-import org.springframework.hateoas.Link;
 import org.springframework.hateoas.server.RepresentationModelProcessor;
 import org.springframework.stereotype.Component;
 
+import classmgt.domain.Clazz;
+
 @Component
 public class ClassHateoasProcessor
-    implements RepresentationModelProcessor<EntityModel<Class>> {
+    implements RepresentationModelProcessor<EntityModel<Clazz>> {
 
     @Override
-    public EntityModel<Class> process(EntityModel<Class> model) {
+    public EntityModel<Clazz> process(EntityModel<Clazz> model) {
         return model;
     }
 }

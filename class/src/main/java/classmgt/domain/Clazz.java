@@ -1,9 +1,19 @@
 package classmgt.domain;
 
-import classmgt.ClassApplication;
-import java.util.Date;
 import java.util.List;
-import javax.persistence.*;
+
+import javax.persistence.AttributeOverride;
+import javax.persistence.Column;
+import javax.persistence.Embedded;
+import javax.persistence.Entity;
+import javax.persistence.EnumType;
+import javax.persistence.Enumerated;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+import classmgt.ClassApplication;
 import lombok.Data;
 
 @Entity
@@ -29,12 +39,10 @@ public class Clazz {
         name = "id",
         column = @Column(name = "categoryIdId", nullable = true)
     )
-    private CategoryId categoryId;
+    private List<CategoryId> categoryId;
 
     public static ClassRepository repository() {
-        ClassRepository classRepository = ClassApplication.applicationContext.getBean(
-            ClassRepository.class
-        );
+        ClassRepository classRepository = ClassApplication.applicationContext.getBean(ClassRepository.class);
         return classRepository;
     }
 }

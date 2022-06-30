@@ -1,9 +1,18 @@
 package classmgt.domain;
 
+import javax.persistence.AttributeOverride;
+import javax.persistence.Column;
+import javax.persistence.Embedded;
+import javax.persistence.Entity;
+import javax.persistence.EnumType;
+import javax.persistence.Enumerated;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.PostPersist;
+import javax.persistence.Table;
+
 import classmgt.EnrollmentApplication;
-import java.util.Date;
-import java.util.List;
-import javax.persistence.*;
 import lombok.Data;
 
 @Entity

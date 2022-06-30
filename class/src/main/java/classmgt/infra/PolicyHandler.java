@@ -1,15 +1,12 @@
 package classmgt.infra;
 
-import classmgt.config.kafka.KafkaProcessor;
-import classmgt.domain.*;
-import com.fasterxml.jackson.databind.DeserializationFeature;
-import com.fasterxml.jackson.databind.ObjectMapper;
-import javax.naming.NameParser;
-import javax.naming.NameParser;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.stream.annotation.StreamListener;
 import org.springframework.messaging.handler.annotation.Payload;
 import org.springframework.stereotype.Service;
+
+import classmgt.config.kafka.KafkaProcessor;
+import classmgt.domain.ClassRepository;
 
 @Service
 public class PolicyHandler {
