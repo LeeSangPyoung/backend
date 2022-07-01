@@ -193,5 +193,6 @@ https://labs.msaez.io/#/courses/cna-full/full-course-cna/ops-utility
 	)
 	```
   
- ## 2일차(7/01) 코딩
- class --> lecture
+ ## 3. 2일차(7/01) 코딩
+ 1. class --> lecture  ==> 완료
+ 2. 강의 분류를 ReadModel로 만들자
