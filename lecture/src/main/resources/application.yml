@@ -25,11 +25,11 @@ spring:
                   serde: org.apache.kafka.common.serialization.Serdes$StringSerde
       bindings:
         event-in:
-          group: class
-          destination: classmgt
+          group: lecture
+          destination: lecture-category
           contentType: application/json
         event-out:
-          destination: classmgt
+          destination: lecture-category
           contentType: application/json
 
 logging:
