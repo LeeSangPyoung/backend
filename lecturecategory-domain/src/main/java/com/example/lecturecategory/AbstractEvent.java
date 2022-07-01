@@ -1,6 +1,6 @@
-package com.example.petstore;
+package com.example.lecturecategory;
 
-import com.example.petstore.kafka.KafkaProcessor;
+import com.example.lecturecategory.kafka.KafkaProcessor;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.messaging.MessageChannel;
