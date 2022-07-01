@@ -62,6 +62,20 @@ Following problems may be occurred:
 
 https://labs.msaez.io/#/courses/cna-full/full-course-cna/ops-utility
 
+## 코드 테스트 방법
+
+1. http로 테스트
+   - pip install httpie
+    ```
+    http :8081/lectures title="MSA" minEnrollment=1 maxEnrollment=10 status="OPENED" categoryId[id]="1"
+    -- 결과 조회
+    http GET localhost:8081/lectures/1  
+
+    http :8082/enrollments customerId="myinno" classId[id]="1" status="ENROLLED"
+
+    http :8083/categories title="MSA_catalog"
+
+    ```
 ## 2. 테이블 확인
 
 ### 처음 생성된 테이블
