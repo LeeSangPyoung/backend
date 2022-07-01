@@ -12,6 +12,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import javax.persistence.Version;
 
 import lecturemgt.ClassApplication;
 import lombok.Data;
@@ -25,6 +26,9 @@ public class Lecture {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
+    @Version
+    private Long version;
+
     private String title;
 
     private Integer minEnrollment;
@@ -32,14 +36,14 @@ public class Lecture {
     private Integer maxEnrollment;
 
     @Enumerated(EnumType.STRING)
-    private Status status;
+    private LectureStatus status;
 
     @Embedded
     @AttributeOverride(
         name = "id",
         column = @Column(name = "categoryIdId", nullable = true)
     )
-    private List<CategoryId> categoryId;
+    private CategoryId categoryId;
 
     public static LectureRepository repository() {
         LectureRepository classRepository = ClassApplication.applicationContext.getBean(LectureRepository.class);
