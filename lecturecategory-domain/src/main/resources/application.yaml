@@ -1,5 +1,5 @@
 server:
-  port: 8081
+  port: 8082
 
 ---
 
@@ -25,11 +25,11 @@ spring:
                   serde: org.apache.kafka.common.serialization.Serdes$StringSerde
       bindings:
         event-in:
-          group: pet
-          destination: petstore
+          group: lecturecategory
+          destination: lecture
           contentType: application/json
         event-out:
-          destination: petstore
+          destination: lecture
           contentType: application/json
 
 logging:
@@ -40,7 +40,7 @@ logging:
 ---
 
 server:
-  port: 8080
+  port: 8082
 
 spring:
   profiles: docker
@@ -59,9 +59,9 @@ spring:
                   serde: org.apache.kafka.common.serialization.Serdes$StringSerde
       bindings:
         event-in:
-          group: pet
-          destination: petstore
+          group: lecturecategory
+          destination: lecture
           contentType: application/json
         event-out:
-          destination: petstore
+          destination: lecture
           contentType: application/json
