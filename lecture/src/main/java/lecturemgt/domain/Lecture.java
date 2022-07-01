@@ -14,7 +14,7 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 import javax.persistence.Version;
 
-import lecturemgt.ClassApplication;
+import lecturemgt.LectureApplication;
 import lombok.Data;
 
 @Entity
@@ -46,7 +46,7 @@ public class Lecture {
     private CategoryId categoryId;
 
     public static LectureRepository repository() {
-        LectureRepository classRepository = ClassApplication.applicationContext.getBean(LectureRepository.class);
-        return classRepository;
+        LectureRepository rectureRepository = LectureApplication.applicationContext.getBean(LectureRepository.class);
+        return rectureRepository;
     }
 }

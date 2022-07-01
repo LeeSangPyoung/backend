@@ -3,7 +3,7 @@ package lecturemgt.infra;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
-import lecturemgt.ClassApplication;
+import lecturemgt.LectureApplication;
 import lecturemgt.config.kafka.KafkaProcessor;
 
 import org.springframework.messaging.MessageChannel;
@@ -43,7 +43,7 @@ public class AbstractEvent {
             /**
              * spring streams 방식
              */
-            KafkaProcessor processor = ClassApplication.applicationContext.getBean(
+            KafkaProcessor processor = LectureApplication.applicationContext.getBean(
                 KafkaProcessor.class
             );
             MessageChannel outputChannel = processor.outboundTopic();

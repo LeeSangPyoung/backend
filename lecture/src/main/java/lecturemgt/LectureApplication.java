@@ -11,12 +11,12 @@ import lecturemgt.config.kafka.KafkaProcessor;
 @SpringBootApplication
 @EnableBinding(KafkaProcessor.class)
 @EnableFeignClients
-public class ClassApplication {
+public class LectureApplication {
 
     public static ApplicationContext applicationContext;
 
     public static void main(String[] args) {
         applicationContext =
-            SpringApplication.run(ClassApplication.class, args);
+            SpringApplication.run(LectureApplication.class, args);
     }
 }
