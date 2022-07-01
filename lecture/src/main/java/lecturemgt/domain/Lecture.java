@@ -1,4 +1,4 @@
-package classmgt.domain;
+package lecturemgt.domain;
 
 import java.util.List;
 
@@ -13,13 +13,13 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
-import classmgt.ClassApplication;
+import lecturemgt.ClassApplication;
 import lombok.Data;
 
 @Entity
-@Table(name = "Class_table")
+@Table(name = "Lecture_table")
 @Data
-public class Clazz {
+public class Lecture {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
@@ -41,8 +41,8 @@ public class Clazz {
     )
     private List<CategoryId> categoryId;
 
-    public static ClassRepository repository() {
-        ClassRepository classRepository = ClassApplication.applicationContext.getBean(ClassRepository.class);
+    public static LectureRepository repository() {
+        LectureRepository classRepository = ClassApplication.applicationContext.getBean(LectureRepository.class);
         return classRepository;
     }
 }

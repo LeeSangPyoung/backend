@@ -1,9 +1,11 @@
-package classmgt.infra;
+package lecturemgt.infra;
 
-import classmgt.ClassApplication;
-import classmgt.config.kafka.KafkaProcessor;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
+
+import lecturemgt.ClassApplication;
+import lecturemgt.config.kafka.KafkaProcessor;
+
 import org.springframework.messaging.MessageChannel;
 import org.springframework.messaging.MessageHeaders;
 import org.springframework.messaging.support.MessageBuilder;

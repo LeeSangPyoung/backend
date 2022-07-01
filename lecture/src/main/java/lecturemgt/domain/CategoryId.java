@@ -1,4 +1,4 @@
-package classmgt.domain;
+package lecturemgt.domain;
 
 import javax.persistence.Embeddable;
 

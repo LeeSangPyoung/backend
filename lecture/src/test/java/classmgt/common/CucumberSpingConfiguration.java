@@ -1,7 +1,8 @@
 package classmgt.common;
 
-import classmgt.ClassApplication;
 import io.cucumber.spring.CucumberContextConfiguration;
+import lecturemgt.ClassApplication;
+
 import org.springframework.boot.test.context.SpringBootTest;
 
 @CucumberContextConfiguration

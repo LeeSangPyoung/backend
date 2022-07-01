@@ -1,4 +1,4 @@
-package classmgt.domain;
+package lecturemgt.domain;
 
 public enum Status {
     OPENED,
